@@ -39,3 +39,5 @@ Delete a single note
 3. What kind of DOM element do you want to hold your data? (`<div>/<li>/<p>/etc`). Does that element already exist on the DOM or do you need to create it?
 4. Decide whether you want to use a string template to create that element(s) or if you want to use `document.createElement(<tagName>)` and set attributes programmatically
 5. Where on the DOM do you want this element to live? What element are you appending/prepending to / What element's innerHTML are you manipulating (Do you want to add to its content or replace it?)
+
+## End Product

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #eee;
+}
+
+.new-note-form {
+  width: 100%;
+  height: 10vh;
+  background-color: #262626;
+  color: #eee;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.new-note-form input {
+  width: 25%;
+  height: 25%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.new-note-form input[type='submit'] {
+  width: 10%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.main-container {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 'list main';
+}
+
+.notes-list {
+  grid-area: list;
+  list-style: none;
+  height: 100%;
+  overflow: scroll;
+  margin: 0;
+  background-color: rgb(136, 20, 0);
+  color: #eee;
+  padding: 0;
+}
+
+.notes-list li {
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.notes-list li:hover {
+  background-color: #eee;
+  color: #262626;
+}
+
+.note-content {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

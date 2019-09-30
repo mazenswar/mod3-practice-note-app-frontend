@@ -18,6 +18,14 @@ Delete a single note
 
 `DELETE http://localhost:3000/notes/:id`
 
+Create a comment
+
+`POST http://localhost:3000/comments`
+
+Create a like
+
+`POST http://localhost:3000/likes`
+
 ### Confused about which API endpoint to use in your fetch?
 
 ### Things to consider:
@@ -40,4 +48,19 @@ Delete a single note
 4. Decide whether you want to use a string template to create that element(s) or if you want to use `document.createElement(<tagName>)` and set attributes programmatically
 5. Where on the DOM do you want this element to live? What element are you appending/prepending to / What element's innerHTML are you manipulating (Do you want to add to its content or replace it?)
 
-## End Product
+# Deliverables
+
+1. When the app loads, the user should see a list of note titles in `<ul class="notes-list"></ul>`
+2. When a user clicks on a note title in `<ul class="notes-list"></ul>`, the clicked note's details should show in `<div class="note-content"></div>`
+3. A user should be able to create a new note using `<form class="new-note-form"></form>`
+4. A user should be able to like a note.
+5. A user should be able to comment on a note.
+
+# Bonus
+
+1. Add an update feature that lets the user update the note title and/or the content.
+2. Add a delete feature to delete a note.
+
+## END PRODUCT
+
+![End Product](./note-app.gif)
